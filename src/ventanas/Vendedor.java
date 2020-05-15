@@ -157,15 +157,15 @@ public class Vendedor extends javax.swing.JFrame {
 
     private void jButton_RegistrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_RegistrarClienteActionPerformed
 
-        //RegistrarClientes registrarClientes = new RegistrarClientes();
-        //registrarClientes.setVisible(true);
+        RegistrarClientes registrarClientes = new RegistrarClientes();
+        registrarClientes.setVisible(true);
 
     }//GEN-LAST:event_jButton_RegistrarClienteActionPerformed
 
     private void jButton_GestionarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_GestionarClientesActionPerformed
 
-        //GestionarClientes gestionarClientes = new GestionarClientes();
-        //gestionarClientes.setVisible(true);
+        GestionarClientes gestionarClientes = new GestionarClientes();
+        gestionarClientes.setVisible(true);
 
     }//GEN-LAST:event_jButton_GestionarClientesActionPerformed
 
@@ -175,8 +175,8 @@ public class Vendedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_FacturarActionPerformed
 
     private void jButton_ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProductosActionPerformed
-        //Productos productos = new Productos();
-        //productos.setVisible(true);
+        Productos productos = new Productos();
+        productos.setVisible(true);
     }//GEN-LAST:event_jButton_ProductosActionPerformed
 
     /**

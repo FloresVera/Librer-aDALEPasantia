@@ -170,8 +170,8 @@ public class Vendedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_GestionarClientesActionPerformed
 
     private void jButton_FacturarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FacturarActionPerformed
-        //Facturar facturar = new Facturar();
-        //facturar.setVisible(true);
+        Facturar facturar = new Facturar();
+        facturar.setVisible(true);
     }//GEN-LAST:event_jButton_FacturarActionPerformed
 
     private void jButton_ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProductosActionPerformed

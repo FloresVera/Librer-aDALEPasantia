@@ -70,6 +70,11 @@ public class Login extends javax.swing.JFrame {
                 txt_passActionPerformed(evt);
             }
         });
+        txt_pass.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_passKeyTyped(evt);
+            }
+        });
         getContentPane().add(txt_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 370, 210, -1));
 
         jButton_Acceder.setBackground(new java.awt.Color(153, 153, 255));
@@ -137,6 +142,12 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Debe de llenar todos los campos");
         }
     }//GEN-LAST:event_jButton_AccederActionPerformed
+
+    private void txt_passKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_passKeyTyped
+        if (evt.getKeyChar() == '\n') {
+            jButton_Acceder.doClick();
+        }
+    }//GEN-LAST:event_txt_passKeyTyped
 
     /**
      * @param args the command line arguments

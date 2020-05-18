@@ -370,6 +370,7 @@ public class Productos extends javax.swing.JFrame {
                     txt_ultima.setBackground(Color.green);
 
                     JOptionPane.showMessageDialog(null, "Modificacion correcta.");
+                    this.dispose();
                 }
             } catch (SQLException e) {
                 System.err.println("Error al actualizar." + e);

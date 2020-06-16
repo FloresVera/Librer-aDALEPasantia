@@ -56,7 +56,19 @@ public class Facturar extends javax.swing.JFrame {
         jLabel_Wallpaper.setIcon(icono);
         this.repaint();
 
-        jLabel_nro_serie.setText("2");
+        String idv="";
+        try {
+            Connection cn = Conexion.conectar();
+            PreparedStatement pst = cn.prepareStatement(
+                    "select max(ven_id) from ventas");
+            ResultSet rs = pst.executeQuery();
+            while(rs.next()){
+                idv = rs.getString(1);
+            }
+        } catch (SQLException e) {
+            System.err.println("No se pudo encontrar el id ventas" + e);
+        }
+        jLabel_nro_serie.setText(idv);
         numVenta = jLabel_nro_serie.getText();
         
         txt_codProducto.requestFocus();

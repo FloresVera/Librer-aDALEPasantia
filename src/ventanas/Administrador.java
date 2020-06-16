@@ -103,6 +103,7 @@ public class Administrador extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_GestionarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, 120, 100));
 
+        jButton_VistaVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/vendedor.png"))); // NOI18N
         jButton_VistaVendedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_VistaVendedorActionPerformed(evt);

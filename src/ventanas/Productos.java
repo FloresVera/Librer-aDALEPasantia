@@ -108,7 +108,7 @@ public class Productos extends javax.swing.JFrame {
                         }
                         cn.close();
                     } catch (SQLException e2) {
-                        System.err.println("Error en cargar producto." + e2);
+                        System.err.println("Error en cargar producto." + e);
                         JOptionPane.showMessageDialog(null, "Error al cargar, contacte al administrador");
                     }
                     

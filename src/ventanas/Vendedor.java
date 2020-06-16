@@ -121,6 +121,7 @@ public class Vendedor extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_GestionarClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 120, 100));
 
+        jButton_Productos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/productos.png"))); // NOI18N
         jButton_Productos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_ProductosActionPerformed(evt);
@@ -128,6 +129,7 @@ public class Vendedor extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Productos, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 120, 100));
 
+        jButton_Facturar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ventas.png"))); // NOI18N
         jButton_Facturar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_FacturarActionPerformed(evt);
@@ -148,7 +150,7 @@ public class Vendedor extends javax.swing.JFrame {
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 320, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Facturar");
+        jLabel6.setText("Ventas.");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
         getContentPane().add(jLabel_Wallpaper, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 400));
 
@@ -170,8 +172,8 @@ public class Vendedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_GestionarClientesActionPerformed
 
     private void jButton_FacturarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FacturarActionPerformed
-        Facturar facturar = new Facturar();
-        facturar.setVisible(true);
+        Facturar f = new Facturar();
+        f.setVisible(true);
     }//GEN-LAST:event_jButton_FacturarActionPerformed
 
     private void jButton_ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProductosActionPerformed
